@@ -1,11 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClearHealth</title>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+
+    <title>ClearHealth - Timeline</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/brands.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">
+
 </head>
+
 <body>
-    <h1>ClearHealth</h1>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container">
+        <a class="navbar-brand logo" href="#"><i class="fa fa-air-freshener"></i> ClearHealth</a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><i class="fa fa-calendar-week nav_icon"></i> Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-stethoscope nav_icon"></i> Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="requests.html"><i class="fa fa-file-invoice nav_icon"></i> Requests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="share.html"><i class="fa fa-share nav_icon"></i> Share</a>
+                </li>
+            </ul>
+
+            <a class="nav-link" href="#"><i class="fa fa-bell nav_icon"></i></a><span
+                class="badge badge-danger noti_count">2</span>
+            &nbsp;
+            <a class="nav-link" href="#"><i class="fa fa-user nav_icon"></i>Saiem Amer</a>
+
+
+        </div>
+    </div>
+</nav>
+<div class="filters_bar">
+    <div class="container">
+        <form class="form-inline">
+            <div class="form-group mr-2">
+                <label class="sr-only" for="dated">Date</label>
+                <input class="form-control form-control-sm" id="dated" placeholder="Select Date" type="date">
+            </div>
+            <div class="form-group mr-2">
+                <label class="sr-only" for="VisitType">VisitType</label>
+                <select class="form-control form-control-sm" id="VisitType">
+                    <option>Visit Type</option>
+                </select>
+            </div>
+            <div class="form-group mr-2">
+                <label class="sr-only" for="VisitDetails">VisitDetails</label>
+                <select class="form-control form-control-sm" id="VisitDetails">
+                    <option>Visit Details</option>
+                </select>
+            </div>
+            <div class="form-group mr-2">
+                <label class="sr-only" for="Facility">Facility</label>
+                <select class="form-control form-control-sm" id="Facility">
+                    <option>Facility</option>
+                </select>
+            </div>
+            <div class="form-group mr-2">
+                <label class="sr-only" for="Facility">Doctor</label>
+                <select class="form-control form-control-sm" id="Doctor">
+                    <option>Doctor</option>
+                </select>
+            </div>
+            <button class="btn btn-outline-primary btn-sm" type="submit"><i class="fa fa-filter"></i> Apply Filters
+            </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-3 d-none d-sm-block   ">
+            <div class="circle bg_imaging">
+                <div class="circle__inner">
+                    <div class="circle__wrapper">
+                        <div class="circle__content">Nov 15</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="col-lg-11 col-md-10 col-sm-10 col-xs-9">
+            <div class="timeline_box border_imaging">
+                <button class="btn btn-success top-corner"><i class="fa fa-image"></i> <b>IMAGING</b></button>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+                        <h3 class="title">MRI:Brain</h3>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-right">
+                        <a class="greyText" href="#"><i class="fa fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 greyText">
+                        <i class="fa fa-user"></i> Mark Saker, MD
+                    </div>
+                    <div class="col-lg-10 col-md-8 col-sm-6 col-xs-6 greyText">
+                        <i class="fa fa-map-marked"></i> Advocate Health Care > Sunway Medical Center
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                        when
+                        looking at its layout.
+                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution.It is a long
+                        established fact that a reader will be distracted by the readable content of a page when looking
+                        at its
+                        layout.
+                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution.It is a long
+                        established fact that a reader will be distracted by the readable content of a page when looking
+                        at its
+                        layout.
+                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution.
+                        <br/> <br/>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 text-center">
+
+                        <img class="img-fluid" src="https://via.placeholder.com/350">
+                        <br/>
+                        <a href="#">View Images</a>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="title">Indication</h4>
+                        Multiple Scierosis.
+                    </div>
+
+                </div>
+                <br/>
+                <div class="row ">
+                    <div class="col-lg-12 text-right">
+                        <a href="#">
+                            <button class="btn-info btn btn-sm">View More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-3 d-none d-sm-block   ">
+            <div class="circle bg_lab">
+                <div class="circle__inner">
+                    <div class="circle__wrapper">
+                        <div class="circle__content">Oct 24</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="col-lg-11 col-md-10 col-sm-10 col-xs-9">
+            <div class="timeline_box  border_lab">
+                <button class="btn btn-warning top-corner"><i class="fa fa-chart-bar"></i> <b>LAB</b></button>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+                        <h3 class="title">Labs</h3>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-right">
+                        <a class="greyText" href="#"><i class="fa fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+
+                <br/>
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 greyText">
+                        <i class="fa fa-map-marked"></i> LabCorp
+                    </div>
+                    <div class="col-lg-10 col-md-8 col-sm-6 col-xs-6 greyText">
+
+                    </div>
+                </div>
+                <hr/>
+
+                <br/>
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <b>Chloride</b>
+                        <br/>
+                        Your Result: <span class="badge badge-danger">22</span>
+                        <br/>
+                        Healthy Range : 20 - 29+
+                        <table class="table table-borderless">
+                            <tr>
+                                <td width="5%">
+                                    <span class="badge badge-danger">20</span>
+                                </td>
+                                <td class="danger" width="90%">
+                                    <input  disabled id="points" max="28" min="20" name="points"
+                                           style="width: 100%;" type="range" value="22">
+                                </td>
+                                <td width="5%">
+                                    <span class="badge badge-success">29</span>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="col-md-6">
+                        <b>O2</b>
+                        <br/>
+                        Your Result: <span class="badge badge-warning">95</span>
+                        <br/>
+                        Healthy Range : 80 - 100
+                        <table class="table table-borderless">
+                            <tr>
+                                <td width="5%">
+                                    <span class="badge badge-success">95</span>
+                                </td>
+                                <td class="safe" width="90%">
+                                    <input  disabled max="100" min="50" name="points" style="width: 100%;"
+                                           type="range" value="95">
+                                </td>
+                                <td width="5%">
+                                    <span class="badge badge-success">100</span>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+                <br/>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <b>RBCs</b>
+                        <br/>
+                        Your Result: <span class="badge badge-warning">3.5</span>
+                        <br/>
+                        Healthy Range : 3.3 - 5.2
+                        <table class="table table-borderless">
+                            <tr>
+                                <td width="5%">
+                                    <span class="badge badge-warning">3.3</span>
+                                </td>
+                                <td class="warning" width="90%">
+                                    <input  disabled max="5.2" min="3.3"  value="3.9" name="points" style="width: 100%;"
+                                           type="range" step="0.1">
+                                </td>
+                                <td width="5%">
+                                    <span class="badge badge-success">5.2</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+
+                        <b>BPM</b>
+                        <br/>
+                        Your Result: <span class="badge badge-danger">48</span>
+                        <br/>
+                        Healthy Range : 72-100
+                        <table class="table table-borderless">
+                            <tr>
+                                <td width="5%">
+                                    <span class="badge badge-danger">3.5</span>
+                                </td>
+                                <td class="danger" width="90%">
+                                    <input disabled max="180" min="0" name="points" style="width: 100%;" type="range" value="48">
+                                </td>
+                                <td width="5%">
+                                    <span class="badge badge-success">5.2</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <br/>
+                <div class="row ">
+                    <div class="col-lg-12 text-right">
+                        <a href="#">
+                            <button class="btn-info btn btn-sm">View More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-3 d-none d-sm-block   ">
+            <div class="circle bg_visit">
+                <div class="circle__inner">
+                    <div class="circle__wrapper">
+                        <div class="circle__content">Oct 06</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="col-lg-11 col-md-10 col-sm-10 col-xs-9">
+            <div class="timeline_box border_visit">
+                <button class="btn btn-primary top-corner"><i class="fa fa-people-carry"></i> <b>VISIT</b></button>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+                        <h3 class="title">Office Visit: Neurology</h3>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-right">
+                        <a class="greyText" href="#"><i class="fa fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 greyText">
+                        <i class="fa fa-user"></i> Timothy J Mikesell, DO
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-6 col-xs-6 greyText">
+                        <i class="fa fa-map-marked"></i> Advocate Health Care > Sunway Medical Center
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li aria-current="page" class="breadcrumb-item "><b>Notes</b></li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="title">Follow Up</h4>
+                        6 Months
+                        <br/> <br/>
+                        <h4 class="title">Assessments</h4>
+                        <ol>
+                            <li>Multiple scierosis - G35 (Primary)</li>
+                            <li>Other abnormalities of gait and mobility - R26.89</li>
+                            <li>Other fatigue - R53.83</li>
+                            <li>Paresthesia of skin - R20.2</li>
+                        </ol>
+
+                        <br/>
+
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything
+                        embarrassing hidden in the middle of text.
+                    </div>
+                </div>
+                <br/>
+                <div class="row ">
+                    <div class="col-lg-12 text-right">
+                        <a href="#">
+                            <button class="btn-info btn btn-sm">View More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<br/><br/>
+
+<!-- Bootstrap core JavaScript -->
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>

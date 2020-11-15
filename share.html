@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+
+    <title>Share</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/brands.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container">
+        <a class="navbar-brand logo" href="#"><i class="fa fa-air-freshener"></i> ClearHealth</a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-calendar-week nav_icon"></i> Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-stethoscope nav_icon"></i> Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="requests.html"><i class="fa fa-file-invoice nav_icon"></i> Requests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="share.html"><i class="fa fa-share nav_icon"></i> Share</a>
+                </li>
+            </ul>
+
+            <a class="nav-link" href="#"><i class="fa fa-bell nav_icon"></i></a><span
+                class="badge badge-danger noti_count">2</span>
+            &nbsp;
+            <a class="nav-link" href="#"><i class="fa fa-user nav_icon"></i>Saiem Amer</a>
+
+
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <div class="timeline_box">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+                <h3 class="title">People You've Shared With</h3>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-right">
+                <button class="btn btn-info" data-toggle="modal" data-target="#shareModal">Share Timeline</button>
+            </div>
+        </div>
+        <hr/>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-search"></i></span>
+                    </div>
+                    <input type="text" class="form-control form-control-sm" placeholder="Find People" style="width: 150px;">
+                </div>
+                <br/>
+            </div>
+            <br/>
+
+            <div class="col-md-12">
+                <table class="table table-striped table share_data">
+                    <thead>
+                    <tr>
+                        <td>NAME</td>
+                        <td>STATUS</td>
+                        <td>LAST ACCESSED</td>
+                        <td>ACTIONS</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-light">
+                        <td>Grade Thomas</td>
+                        <td><i class="fa fa-circle"></i> Access Enabled</td>
+                        <td>05/20/20 6:59 PM</td>
+                        <td><button class="btn btn-info">Actonis</button></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br />
+                <p>
+                    <a href="#">Need Help?</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<br/><br/>
+
+
+<div class="modal fade " tabindex="-1" role="dialog" id="shareModal">
+    <div class="modal-dialog  modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center">New Share Link</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="names">Recipient Name</label>
+                            <input type="text" class="form-control" id="names" aria-describedby="emailHelp" placeholder="e.g. John Smith, Dr House, etc">
+                            <small id="dxd" class="form-text text-muted">Your current care providers in PicninHealth will show up when you start typing</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="typeRec">Recipient Type</label><br />
+                            <input type="checkbox"  id="typeRec" aria-describedby="typeRec" disabled >
+                            The recipient is a care provider
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row " id="moreOptions" style="display: none">
+                    <hr />
+                    <br />
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="sharelink">Share Link</label>
+                            <input type="text" value="Click to generate and view the share link" class="form-control" id="sharelink" aria-describedby="sharelink" placeholder="">
+                            <small id="dd" class="form-text text-muted">Anyone with this link and your date of birth can view your timeline.</small>
+                        </div>
+                        <br />
+                        <div class="hr-sect">Share link (optional)</div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <br />
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td class="text-center">
+                                            <i class="fa fa-envelope-open fa-3x" style="color:grey"></i>
+                                            <br />
+                                            Email
+                                        </td>
+                                        <td class="text-center">
+                                            <i class="fa fa-fax fa-3x" style="color:grey"></i>
+                                            <br />
+                                            Fax
+                                        </td>
+                                        <td class="text-center">
+                                            <i class="fa fa-mobile fa-3x" style="color:grey"></i><br />
+                                            Text
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <small  class="form-text text-muted">Unsure how to send your link?</small><br />
+                                <button class="btn btn-outline-primary">Help me contact my doctor</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-info" disabled>Save</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+<!-- Bootstrap core JavaScript -->
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    $('#names').on('input',function(e){
+        $('#moreOptions').show()
+    });
+</script>
+</body>
+
+</html>
