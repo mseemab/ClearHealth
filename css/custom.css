@@ -3,7 +3,7 @@ body {
 }
 
 .logo{
-    color: dodgerblue !important;
+    color: #6dcdb1 !important;
     font-weight: bold;
     padding-right: 30px; // remove if it annoys you.
 }
@@ -14,7 +14,7 @@ body {
 }
 
 .active{
-    border-bottom: 3px solid dodgerblue;
+    border-bottom: 3px solid #6dcdb1;
 }
 
 .filters_bar{
@@ -119,6 +119,9 @@ body {
     border-radous: 0px 5px 0px 5px !important;
 }
 
+a {
+    color: #6dcdb1
+}
 /*
 
 .bg_imaging{
